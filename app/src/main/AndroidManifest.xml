@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eventmanegmentsystem">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logonew"
+        android:label="Étudiant"
+        android:roundIcon="@drawable/logonew"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventManegmentSystem">
+        <activity android:name="com.example.eventmanegmentsystem.login.SignUpCustomer"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.AdminPanel"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.Customer_list"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.CustomerPanel"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.Add_event"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.Event_list"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.CustomerEventList"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.ManageEventRequests"/>
+        <activity android:name="com.example.eventmanegmentsystem.Activity.EventDashborad"/>
+        <activity android:name="com.example.eventmanegmentsystem.login.LoginPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+    </application>
+
+</manifest>
